@@ -1,0 +1,27 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+}
+.container{
+    padding: 2em 4em 2em;
+}
+.form-special{
+  width: 20rem;
+  border: 1px solid;
+  border-style: hidden;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 8px 8px 2px #b3b3b3;
+  padding: 3em;
+  margin: auto;
+}
+.form-special h1{
+    margin: 0;
+    padding: 0;
+}
+::placeholder {
+    font-size: 10px;
+}
+
+  
