@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html, body{
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+    }
+    .container{
+        padding: 0 5em;
+    }
+    .card{
+        padding: 2em;
+        margin: auto;
+        border: 1px solid;
+        border-style: hidden;
+        border-radius: 15px;
+    }
+    .card-body p{
+        font-size: 10px;
+    }
+    .card-body h6{
+        padding: 0;
+        margin: 0;
+    }
+    .custom-shadow{
+        background-color: #FFFFFF;
+        box-shadow: -30px -30px 0 1px #FFD767;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .custom-btn{
+        border: 1px solid;
+        border-style: hidden;
+        border-radius: 5px;
+        padding: 1em;
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card custom-shadow" style="margin-top: 5em; width: 25rem;"> 
+            <h2>Voting Schedule</h2>
+            <div class="grid-container card-body">
+                <div>
+                    <h6>OPENING ROUND</h6>
+                    <p>Nov. 16 - 18</p>
+                </div>
+                <div>
+                    <h6>FINAL ROUND</h6>
+                    <p>Nov. 30 - Dec. 5</p>
+                </div>
+                <div>
+                    <h6>WINNERS ANNOUNCED</h6>
+                    <p>Dec. 9</p>
+                </div>
+            </div>
+            <button class="custom-btn" onclick="myBtn();" style="margin: 2em 0 2em">Vote for the best books</button><br>
+            <a href="#">Rules and Eligibility</a>
+        </div>
+        <div class="card" style="width: 21rem; background-color: #FFD767; margin-top: 5em; margin-right: 5em; margin-bottom: 5em;">
+            <label for="p-bar"><span>Opening round<span> <span style="color: rgba(0, 0, 0, 0.5)"> &bull; Final Round</span> <span style="color: rgba(0, 0, 0, 0.5)">  &bull; Winners Announced</span></label><br>
+            <progress id="p-bar" value="30" max="100" style="width: 100%;"></progress>
+        </div>
+    </div>
+</body>
+</html>
