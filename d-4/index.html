@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            background-color: #e9edf7;
+        }
+        .container{
+            padding: 0 5em;
+        }
+        .d-grid{
+            display: grid;
+        }
+        .d-grid div{
+            padding: 1em;
+        }
+        .d-grid-col-2{
+            grid-template-columns: auto auto;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .border-round-sm{
+            border: 1px solid;
+            border-style: hidden;
+            border-radius: 15px;
+        }
+        .card{
+            padding: 2em;
+        }
+        .custom-shadow{
+            box-shadow: 0 0 0 5em #E0E7F8;
+        }
+        .custom-btn{
+            font-size: 10px;
+            padding: 1em 2em 1em;
+        }
+        button{
+            cursor: pointer;
+        }
+        .custom-f{
+            font-size: 13px;
+        }
+        .custom-pad{
+            padding: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card border-round-sm custom-shadow" style="margin:auto; margin-top: 5em; width:32em; background-color: #FFFFFF;">
+            <div class="d-grid d-grid-col-2 border-round-sm" style="background-color: #626CD6; box-shadow: 0 5px 10px 5px #E0E7F8;">
+                <div style="color:#FFFFFF;">
+                    <h6>DEVELOPER HUB</h6>
+                    <p class="custom-f">Latest on technology, documentation and code examples</p>
+                </div>
+                <div class="d-flex" style="justify-content: end;"> 
+                    <button class="custom-btn" style="align-self:end; background-color: #FFFFFF; margin: 1em" onclick="myBtn()">Learn more</button>
+                </div>
+            </div>
+            <div class="d-grid d-grid-col-2">
+                <div>
+                    <p class="custom-f custom-pad">DOCUMENTATION</p>
+                    <p class="custom-f custom-pad" style="background-color: #F1F2FF;">API clients and integrations</p>
+                    <p class="custom-f custom-pad">Docs</p>
+                    <p class="custom-f custom-pad">Get started</p>
+                    <p class="custom-f custom-pad">Code</p>
+                </div>
+                <div>
+                    <p class="custom-f custom-pad">RESOURCES</p>
+                    <p class="custom-f custom-pad">Discourse</p>
+                    <p class="custom-f custom-pad">GitHub</p>
+                    <p class="custom-f custom-pad">Tech Blog</p>
+                    <p class="custom-f custom-pad">Open Source</p>   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
