@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Font Awsome Cdn-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+        html, body{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            padding: 0 5em;
+        }
+        .card{
+            padding: 1em;
+            box-shadow: 0 0 0 1em #CEE5E4;
+        }
+        .card:hover{
+            box-shadow: 0 0 0 1em #a7b9b8;
+        }
+        .d-grid{
+            display: grid;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .grid-col-2{
+            grid-template-columns: auto auto;
+        }
+        .grid-col-1{
+            grid-template-columns: auto;
+        }
+        .card div{
+            padding: 0 1em;
+        }
+        button{
+            cursor: pointer;
+            border-style: hidden;
+        }
+        .btn-dot{
+            height: 10px;
+            width: 10px;
+            margin-right: 5px;
+            background-color: #E3F0EF;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .custom-btn{
+            background-color: transparent;
+            padding: 0.5em 0.5em;
+            font-weight: bold;
+            font-size: 20px;
+            border-style: hidden;
+        }
+        .custom-btn:hover{
+            background-color: #b1b1b1;
+        }
+        .btn-active{
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="width: 32rem; margin: auto; margin-top: 5em;">
+            <div class="d-grid grid-col-2">
+                <div>
+                    <h1 style="color: #007AC3">Logo</h1>
+                </div>
+                <div>
+                    <p>"Very simple to use, greate automation and keeps me on track with all I need to do. I also like that it can be shared with others."</p>
+                </div>
+                <div class="d-flex" style="align-items: end; margin-bottom: 0.5em;">
+                    <button class="btn-dot"></button>
+                    <button class="btn-dot btn-active"></button>
+                    <button class="btn-dot"></button>
+                </div>
+                <div class="d-flex" style="justify-content: end;">
+                    <p>TERRY IVANS<br>Project Manager</p>
+                </div>
+            </div>
+            <div class="grid-col-1" style="padding-top: 0;">
+                <div>
+                    <hr>
+                    <button class="custom-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="custom-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
