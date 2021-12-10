@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            padding:0;
+            margin:0;
+            background-color: #ECEEFF;
+        }
+        .container{
+            padding: 0 5em;
+        }
+        .border-round-sm{
+            border-radius: 10px;
+        }
+        .d-grid{
+            display: grid;
+        }
+        .grid-col-2{
+            grid-template-columns: auto auto;
+        }
+        .grid-col-5{
+            grid-template-columns: auto auto auto auto auto;
+        }
+        .grid-gap-sm{
+            gap: 10px;
+        }
+        .self-center{
+            margin: auto;
+        }
+        .bg-white{
+            background-color: #FFFFFF;
+        }
+        .p-md{
+            padding: 1.5em;
+        }
+        .p-sm{
+            padding: 0.5em;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .flex-1{
+            flex:1;
+            box-sizing: border-box;
+        }
+        .content-center{
+            justify-content: center;
+        }
+        button{
+            border-style: hidden;
+            cursor: pointer;
+        }
+        .btn-bg-inherit{
+            background-color: inherit;
+        }
+        .btn-bg-inherit:hover{
+            background-color: #FFFFFF;
+        }
+        .btn-border-bluish div button{
+            border: 1px solid #C9CEF9;
+        }
+        .btn-border-bluish div .active{
+            background-color: #111434;
+            color: #FFFFFF;
+        }
+        .btn-border-bluish div button:hover{
+            background-color: #111434;
+            color: #FFFFFF;
+        }
+        .mt-1{
+            margin-top: 1em;
+        }
+        .mb-1{
+            margin-bottom: 1em;
+        }
+        .my-center-5{
+            margin: 5em auto 5em;
+        }
+        .mb-sm{
+            margin-bottom: 0.5em;
+        }
+        .my-1{
+            margin: 1em 0 1em;
+        }
+        .px-1{
+            padding: 1em 0 1em;
+        }
+        input{
+            padding: 1em;
+        }
+        .border-bluish{
+            border: 1px solid #C9CEF9;
+        }
+        .btn-bg-darkblue{
+            background-color: #111434;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <form class="p-md border-round-sm my-center-5 bg-white" action="" method="POST" style="width: 25rem; box-shadow: -15px -15px 0 1px #C9CEF9;">
+        <p>Select gift frequency</p>
+        <div class="d-grid grid-col-2 p-sm" style="background-color: #C9CEF9">
+            <div class="d-flex">
+                <button type="button" class="border-round-sm bg-white flex-1 px-1">Monthly</button> 
+            </div>
+            <div class="d-flex">
+                <button type="button" class="border-round-sm btn-bg-inherit flex-1 px-1">One time</button> 
+            </div>
+        </div>
+        <p>Select amount</p>
+        <div class="d-grid grid-col-5 grid-gap-sm btn-border-bluish">
+            <div class="d-flex">
+                <button type="button" class="border-round-sm btn-bg-inherit flex-1 active px-1">$12</button> 
+            </div>
+            <div class="d-flex">
+                <button type="button" class="border-round-sm btn-bg-inherit flex-1 px-1">$30</button> 
+            </div>
+            <div class="d-flex">
+                <button type="button" class="border-round-sm btn-bg-inherit flex-1 px-1">$40</button> 
+            </div>
+            <div class="d-flex">
+                <button type="button" class="border-round-sm btn-bg-inherit flex-1 px-1">$50</button> 
+            </div>
+            <div class="d-flex">
+                <button type="button" class="border-round-sm btn-bg-inherit flex-1 px-1">$60</button> 
+            </div>
+        </div>
+        <div class="d-grid grid-col-2 mt-1">
+            <div>
+                <input type="checkbox" id="scam" name="scam">
+            </div>
+            <div>
+                <label for="scam">Yes, I'll generously add $0.30 each month to cover the transaction fees</label>
+            </div>
+        </div>
+        <div class="d-flex my-1" style="flex-flow: column;">
+            <label class="mb-sm" for="name">Name</label>
+            <input type="text" class="flex-1 border-bluish" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <div class="d-flex my-1" style="flex-flow: column;">
+            <label class="mb-sm" for="email">Email</label>
+            <input type="email" class="flex-1 border-bluish" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <a href="#" style="text-decoration: none;">Give in honor to another person</a>
+        <div class="d-flex mt-1">
+            <button type="submit" class="border-round-sm btn-bg-darkblue flex-1 my-1"><h3>Donate now</h3></button> 
+        </div>
+        <p>By donating, you agree to our <a href="#">terms of service</a> and <a href="#">privacy policy</a> .</p>
+    </form>
+</body>
+</html>
