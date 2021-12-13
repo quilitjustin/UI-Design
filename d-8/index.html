@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+        html, body{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #F6F5FE;
+        }
+        .container{
+            padding: 0 5em;
+        }
+        .bg-white{
+            background-color: #FFFFFF;
+        }
+        .shadow-bluish-t{
+            box-shadow: -30px -30px 0 5px #E0E7F8;
+        }
+        .mx-my{
+            margin: 5em auto 5em auto;
+        }
+        .my-1{
+            margin: 1em 0 1em;
+        }
+        .mr-sm{
+            margin-right: 0.5em;
+        }
+        .border-round-sm{
+            border-radius: 5px;
+        }
+        .d-grid{
+            display: grid;
+        }
+        .grid-col-5{
+            grid-template-columns: auto auto auto auto auto;
+            gap: 10px;
+        }
+        .grid-row-2{
+            grid-template-rows: auto auto;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .flex-1{
+            flex: 1;
+            box-sizing: border-box;
+        }
+        .content-center{
+            justify-content: center;
+        }
+        .content-end{
+            justify-content: end;
+        }
+        .text-blue{
+            color: #121C51;
+        }
+        .py-1{
+            padding: 1em 0 1em;
+        }
+        .p-1{
+            padding: 1em;
+        }
+        .p-2{
+            padding: 2em;
+        }
+        .p-sm{
+            padding: 0.5em;
+        }
+        button{
+            cursor: pointer;
+            border-style: hidden;
+            border-radius: 5px;
+        }
+        form button:hover{
+            box-shadow: 0 0 5px 5px #f7dfe8;
+        }
+        form a{
+            text-decoration: none;
+        }
+        .active{
+            box-shadow: 0 0 5px 5px #f7dfe8;
+        }
+        .text-pinkish{
+            color: #FF71A4;
+        }
+        .btn-pinkish{
+            background-color: #FF71A4;
+            color: #FFFFFF;
+        }
+        .btn-custom{
+            padding: 1em 2em 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="" class="text-blue bg-white mx-my p-2 shadow-bluish-t border-round-sm" style="width: 25rem;">
+            <h2>Give feedback</h2>
+            <p>What do you think of the issue search experience within Jira projects</p>
+            <div class="d-grid grid-col-5">
+                <button type="button" class="bg-white p-sm"><i class="far fa-smile"></i><br><span>Terrible</span></button>
+                <button type="button" class="bg-white p-sm"><i class="far fa-smile"></i><br><span>Terrible</span></button>
+                <button type="button" class="bg-white p-sm"><i class="far fa-smile"></i><br><span>Terrible</span></button>
+                <button type="button" class="bg-white p-sm active"><i class="far fa-smile"></i><br><span>Terrible</span></button>
+                <button type="button" class="bg-white p-sm"><i class="far fa-smile"></i><br><span>Terrible</span></button>
+            </div>
+            <div class="my-1">
+                <label for="in-reason">What are the main reasons for your rating?</label>
+                <div class="d-flex">
+                    <input class="my-1 flex-1" id="in-reason" name="reason" style="height: 60px;"> 
+                </div>
+            </div> 
+            <input type="checkbox" id="eua" name="eua" required checked>
+            <label for="eua">I may be contacted about this feedback. <a href="#" class="text-pinkish">Privacy Policy</a></label> 
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">I'd like to help improve by joining the <a href="#" class="text-pinkish">Research Group</a></label>
+            <div class="d-flex content-end my-1">
+                <button type="submit" class="btn-pinkish btn-custom mr-sm">Submit</button>
+                <button type="button" class="btn-custom">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
